@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Kinone</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+       <!-----------navigation bar------------>
+    <div class="container">
+        <nav>
+            <img src="images/1.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="portfolio.html">portfolio</a></li>
+                <li><a href="#contact">contact</a></li>
+                <i class="fa fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+    </div>
+    
+       <!-----------sliding images------------>
+    <div class="slider">
+        <figure>
+            <div class="slide">
+                <h1>Gambar Satu</h1>
+                <img src="images/academicblock.jpg" alt="">
+            </div>
+            <div class="slide">
+                <h1>Gambar Dua</h1>
+                <img src="images/auditourium.jpg" alt="">
+            </div>
+            <div class="slide">
+                <h1>Gambar Tiga</h1>
+                <img src="images/cafe.jpg" alt="">
+            </div>
+            
+        </figure>
+    </div>
+
+       <!-----------Portfolio------------>
+    <!-- <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/2.png">
+                    <div class="layer">
+                        <h3>project-1</h3>
+                        <p>describe project</p>
+                        <a href="#"><i class="fa fa-thin fa-link"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/3.jpg">
+                    <div class="layer">
+                        <h3>project-2</h3>
+                        <p>describe project</p>
+                        <a href="#"><i class="fa fa-thin fa-link"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/4.png">
+                    <div class="layer">
+                        <h3>project-3</h3>
+                        <p>describe project</p>
+                        <a href="#"><i class="fa fa-thin fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">see more</a>
+        </div>
+    </div> -->
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+
+</body>
+
+</html>
